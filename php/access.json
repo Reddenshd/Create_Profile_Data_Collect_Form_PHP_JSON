@@ -1,0 +1,5 @@
+var access = [{
+	Username: "testname", 
+	Password: "testpassword", 
+	Email: "testemail"
+}];

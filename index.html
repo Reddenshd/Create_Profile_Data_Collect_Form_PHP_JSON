@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+
+<link href="css/dataform.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/dataform.js"></script>
+
+<title>Create Profile</title>
+</head>
+
+<body onload="ActiveInIt();">
+<form class="create_profile_form" action="php/dataform_complete.php" method="post" name="create_profile_form">
+    <ul>
+        <li>
+             <h2>Create Profile</h2>
+             <span class="required_notification">* Denotes Required Field</span>
+        </li>
+        <li>
+            <label for="name">Username:</label>
+            <input type="name" name="username"  placeholder="JohnDoe" required />
+        </li>
+        <li>
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="1234567!"  maxlength="10" required />
+            <span class="form_hint">Proper format 1234567!"</span>
+        </li>
+        <li>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="name@something.com" required />
+            <span class="form_hint">Proper format "name@something.com"</span>
+        </li>
+     
+        <li>
+        	<button class="submit" type="submit">Submit Profile</button>
+        </li>
+    </ul>
+</form>
+</body>
+
+</html>
